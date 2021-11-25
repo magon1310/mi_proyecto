@@ -1,0 +1,362 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #fdfafd;
+  text-align: center; }
+
+div {
+  margin-top: 10px; }
+
+h1 {
+  padding-top: 30px;
+  color: blueviolet;
+  text-align: center;
+  font-size: xx-large; }
+
+h2 {
+  color: cadetblue;
+  text-decoration: underline;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: large; }
+
+h3.back {
+  margin-top: 50px;
+  margin-left: 40px;
+  font-size: large; }
+  h3.back:hover {
+    font-size: x-large;
+    font-weight: bold;
+    background-color: #5858c0;
+    border-radius: 30px; }
+
+p {
+  font-family: 'Source Serif Pro';
+  color: #3a0ea0;
+  font-size: large; }
+
+ul {
+  display: inline-block;
+  list-style-type: none;
+  overflow: hidden; }
+  ul ul {
+    position: absolute;
+    display: none; }
+    ul ul li {
+      display: block; }
+  ul li {
+    padding-top: 20px;
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: large;
+    color: plum;
+    border-radius: 30px;
+    margin: 10px 10px 5px 10px; }
+    ul li a:hover {
+      font-size: larger;
+      font-weight: bold;
+      transition: 1s; }
+    ul li:hover ul {
+      display: block;
+      color: plum;
+      border-radius: 5px;
+      margin: 5x 5px 5px 5px; }
+
+.padre {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 50px;
+  margin: 10px;
+  justify-content: center;
+  flex: 1; }
+
+.padreHoroscopo {
+  display: flex;
+  padding: 50px;
+  margin: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-height: 700px; }
+
+.sectionIndex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 50px;
+  margin: 10px;
+  justify-content: center;
+  flex: 1; }
+
+.sectionIndex__article1 {
+  display: flex;
+  align-items: flex-start;
+  padding: 50px;
+  margin: 10px;
+  justify-content: center; }
+
+.sectionIndex__article2 {
+  display: flex;
+  align-items: flex-start;
+  padding: 50px;
+  margin: 10px;
+  flex-direction: row-reverse; }
+
+.sectionIndex__article3 {
+  display: flex;
+  align-items: flex-start;
+  padding: 50px;
+  margin: 10px;
+  justify-content: center; }
+
+.sectionIndex__article4 {
+  display: flex;
+  align-items: flex-start;
+  padding: 50px;
+  margin: 10px;
+  flex-direction: column;
+  align-items: center; }
+
+.hijo {
+  padding: 60px;
+  margin: 10px;
+  flex-shrink: 5; }
+
+.sectionLibros {
+  display: flex;
+  padding: 50px;
+  margin: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+
+.sectionLibros__article {
+  padding: 60px;
+  margin: 10px;
+  flex-shrink: 5; }
+
+footer {
+  height: 200px; }
+
+.bordeTop {
+  margin-top: 20px;
+  border-top: #9b909b ridge 1px; }
+
+div.reset {
+  clear: both; }
+
+section article aside {
+  text-align: center; }
+
+.sticky {
+  position: sticky;
+  top: 10px; }
+
+.flexBody {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 100px;
+  margin: 10px;
+  justify-content: center;
+  flex: 1; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+h1.colorPurpura {
+  color: #d8617b; }
+
+.italic {
+  font-style: italic; }
+
+.mayuscula {
+  text-transform: uppercase; }
+
+.negrita {
+  font-weight: bold; }
+
+.centrar {
+  text-align: center; }
+
+.interlineado {
+  line-height: 2; }
+
+a {
+  text-decoration: none; }
+
+#quienes {
+  text-align: center; }
+
+/* GRID PAGINAS TAROT*/
+.gridContainer {
+  display: grid;
+  padding: 10xp;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas: "header" "nav" "article1" "article2" "article3" "article4" "backToHome"; }
+
+.header {
+  grid-area: header; }
+
+.nav {
+  grid-area: nav; }
+
+.article1 {
+  grid-area: article1; }
+
+.article2 {
+  grid-area: article2; }
+
+.article3 {
+  grid-area: article3; }
+
+.article4 {
+  grid-area: article4; }
+
+.backToHome {
+  grid-area: backToHome; }
+
+@media only screen and (min-width: 768px) {
+  .gridContainer {
+    display: grid;
+    padding: 10xp;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    /*grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 100px 50px 200px 200px auto;*/
+    grid-template: "header     header"     100px "nav        nav"        50px "article1   article2"   300px "article3   article4"   300px "backToHome none" auto; }
+  .header {
+    grid-area: header; }
+  .nav {
+    grid-area: nav; }
+  .article1 {
+    grid-area: article1; }
+  .article2 {
+    grid-area: article2; }
+  .article3 {
+    grid-area: article3; }
+  .article4 {
+    grid-area: article4; }
+  .backToHome {
+    grid-area: backToHome; } }
+
+@media only screen and (min-width: 1024px) {
+  .gridContainer {
+    display: grid;
+    padding: 10xp;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template: "header     header      header      header"     100px "nav        nav         nav         nav"        50px "article1   article2    article3    article4"   300px "none       backToHome  none        none"        auto / 1fr         1fr         1fr         1fr; }
+  .header {
+    grid-area: header; }
+  .nav {
+    grid-area: nav; }
+  .article1 {
+    grid-area: article1; }
+  .article2 {
+    grid-area: article2; }
+  .article3 {
+    grid-area: article3; }
+  .article4 {
+    grid-area: article4; }
+  .backToHome {
+    grid-area: backToHome; } }
+
+.fondo {
+  background-image: url("../imagenes/fondo2.jpg"); }
+
+.imgChica {
+  width: 200px;
+  height: 200px; }
+  .imgChica:hover {
+    width: 250px;
+    height: 250px;
+    transition: 1s; }
+
+.bordesRedondeados {
+  border-radius: 30%; }
+
+.flecha {
+  position: fixed;
+  margin-top: 30px;
+  margin-right: 30px;
+  height: 60px;
+  width: 60px;
+  border-radius: 40px;
+  right: 15px;
+  top: 15px; }
+  .flecha:hover {
+    border-radius: 100%;
+    transform: rotate(360deg);
+    transition: transform 2s; }
+
+.zodiaco {
+  height: 120px;
+  width: 120px;
+  border-radius: 40%; }
+  .zodiaco:hover {
+    width: 150px;
+    height: 170px;
+    transition: 2s; }
+
+.hijoZodiaco {
+  padding: 10px;
+  margin: 10px;
+  flex-shrink: 5; }
+
+.imgMediana {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px; }
+  .imgMediana:hover {
+    width: 320px;
+    height: 320px;
+    transition: 1s; }
+
+.imgMedianaTarot {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px; }
+  .imgMedianaTarot:hover {
+    width: 165px;
+    height: 165px;
+    border-radius: 10px;
+    transition: 1s; }
+
+#logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  display: block;
+  margin: auto; }
+
+/** --------------------------------------------------------------------------------------------------------**/
+/**
+
+
+section article.principal{
+    width: 55%;
+    margin: 20px auto;
+    padding: 15px;
+    display: block;
+}
+
+section article img.izquierda{
+    float: left;
+    margin-right: 15px;
+}
+
+section article img.derecha{
+    float: right;
+    margin-left: 15px;
+}
+
+
+**/
